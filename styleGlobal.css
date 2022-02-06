@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #006400;
+}
+
+body {
+    background: linear-gradient(to right, #a8ff78, #78ffd6);
+}
+
+header{
+    background-color: #ecee82;
+    margin-bottom: 20px;
+    height: 60px;
+}
+
+form, #results {
+    padding: 1px;
+    width: 900px;
+    margin: auto;
+    background-color: #c5e2b2;
+    text-align: center;
+    border-radius: 15px;
+    border-color: #006400;
+    border-style: solid;
+
+}
+
+div{
+    margin: 20px;
+
+    
+}
+
+#results{
+    margin-top: 20px;
+   padding: 5px;
+    text-align: justify;
+    
+}
+
+fieldset{
+    border-style: unset;
+    border-radius: 10px;
+    background-color: hsl(96, 45%, 75%);
+    margin: 10px;
+
+}
+
+textarea, select, input[type='text']{
+    background-color: #ecee82;
+}
+
+textarea:focus, input[type='text']:focus{
+    background-color: #fde910;
+}
+
+input[type='radio']:after {
+    width: 10px;
+    height: 10px;
+    border-radius: 15px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: #d1d3d1;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid white;
+}
+
+input[type='radio']:checked:after {
+    width: 10px;
+    height: 10px;
+    border-radius: 15px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: #006400;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid white;
+}
+
+button{
+    background-color: #ecee82;
+    margin: 15px;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: #006400;
+    color: #006400;
+    width: 100px;
+    height: 40px;
+}
+
+button:hover{
+    background-color: #fde910;
+}

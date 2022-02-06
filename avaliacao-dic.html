@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avaliação Discente</title>
+    <link rel="stylesheet" href="./styleGlobal.css">
+</head>
+<body>
+    <header>
+        <h1>Sistema de avaliação: Aluno</h1>
+    </header>
+   
+    <form>
+        <div >
+            <h1>Avaliação de disciplinas </h1>
+        </div>
+        <div>
+            <label for="name">Nome do aluno:</label>
+            <input type="text" name="name" id="name"  required>
+            <label for="periodo">Selcione o período</label>
+                <select name="periodo" id="periodo" required>
+                    <option value="" selected disabled>Bimestre</option>
+                    <option value="1° Bimestre">1° Bimestre</option>
+                    <option value="2° Bimestre">2° Bimestre</option>
+                    <option value="3° Bimestre">3° Bimestre</option>
+                    <option value="4° Bimestre">4° Bimestre</option>
+                </select>
+        </div>
+        <fieldset>
+            <div>
+                <h2>Selecione como você avalia cada disciplina </h2>
+                <p>1 - Péssima <br>
+                        2 - Ruim <br>
+                        3 - Regular <br>
+                        4 - Boa <br>
+                        5 - Ótima</p>
+            </div>
+                <div>
+                    <label for="disciplina1">Programação Web I</label>
+                    <select name="notas" id="disciplina1" required>
+                        <option value="" disabled selected>0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="disciplina2">Introdução à Programação</label>
+                    <select name="notas" id="disciplina2" required>
+                        <option value="" disabled selected>0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="disciplina3">Análise de Projeto de Software</label>
+                    <select name="notas" id="disciplina3" required>
+                        <option value="" disabled selected>0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="disciplina4">Introdução a Redes de Computadores</label>
+                    <select name="notas" id="disciplina4" required>
+                        <option value="" disabled selected>0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="disciplina5">Projeto de Interface de Usuário</label>
+                    <select name="notas" id="disciplina5" required>
+                        <option value="" disabled selected>0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>      
+        </fieldset>
+        <fieldset>
+            <div>
+                <h2>Auto Avaliação</h2>
+                <p>Para auxiliá-lo no preenchimento iremos seguir o mesmo processo de sistematização<br>
+                Portanto, responda os itens com a seguinte legenda: <br>
+                <strong>CF</strong> (concordo fortemente) <strong>C</strong> (concordo) <strong>D</strong> (discordo) <strong>DF</strong> (discordo fortemente)</p>
+            </div>
+            <div>
+                <label for="quest1">1. Cumpri os prazos estabelecidos para as atividades.</label>
+                <select name="quest1" id="quest1" required>
+                    <option value="" selected disabled>selecione</option>
+                    <option value="CF">CF</option>
+                    <option value="C">C</option>
+                    <option value="D">D</option>
+                    <option value="DF">DF</option>
+                </select>
+            </div>
+            <div>
+                <label for="quest2">2. Fui as aulas todos os dias e cheguei pontualmente.</label>
+                <select name="quest2" id="quest2" required>
+                    <option value="" selected disabled>selecione</option>
+                    <option value="CF">CF</option>
+                    <option value="C">C</option>
+                    <option value="D">D</option>
+                    <option value="DF">DF</option>
+                </select>
+            </div>
+            <div>
+                <label for="quest3">3. Quando faltei as aulas procurei me informar  sobre o que foi dado pelo professor.</label>
+                <select name="quest3" id="quest3" required>
+                    <option value="" selected disabled>selecione</option>
+                    <option value="CF">CF</option>
+                    <option value="C">C</option>
+                    <option value="D">D</option>
+                    <option value="DF">DF</option>
+                </select>
+            </div>
+            <div>
+                <label for="quest4">4. Concentrei-me na aula e nas atividades propostas.</label>
+                <select name="quest4" id="quest4" required>
+                    <option value="" selected disabled>selecione</option>
+                    <option value="CF">CF</option>
+                    <option value="C">C</option>
+                    <option value="D">D</option>
+                    <option value="DF">DF</option>
+                </select>
+            </div>
+            <div>
+                <label for="quest5">5. Fiz perguntas ao professor quando não entendi a explicação.</label>
+                <select name="quest5" id="quest5" required>
+                    <option value="" selected disabled>selecione</option>
+                    <option value="CF">CF</option>
+                    <option value="C">C</option>
+                    <option value="D">D</option>
+                    <option value="DF">DF</option>
+                </select>
+            </div>
+            <div>
+                <label for="quest6">6. Em casa, concentrei-me no estudo e desliguei tudo que poderia me atrapalhar.</label>
+                <select name="quest6" id="quest6" required>
+                    <option value="" selected disabled>selecione</option>
+                    <option value="CF">CF</option>
+                    <option value="C">C</option>
+                    <option value="D">D</option>
+                    <option value="DF">DF</option>
+                </select>
+            </div>
+            <div>
+                <label for="quest7"><strong>Agora descreva o que você acha do seu desempenho acadêmico:</strong></label>
+                <br>
+                <textarea rows="6" style="width: 26em" id="quest7" name="quest7" required></textarea>
+            </div>
+        </fieldset>
+
+        <button class="botao" type="submit">Enviar</button>
+    </form>
+    <div id="results">
+        
+    </div>
+    <script src="script-dic.js"></script>
+</body>
+</html>

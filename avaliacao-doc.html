@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avaliação Docente</title>
+    <link rel="stylesheet" href="./styleGlobal.css">
+</head>
+<body>
+    <header>
+        <h1>Sistema de avaliação: Professor</h1>
+    </header>
+    <form>     
+            <div>
+                <h1>Avaliação da Turma</h1>
+                <label for="nomeprof">Professor(a):</label>
+                <input type="text" name="nomeprof" id="nomeprof" required>
+                <label for="periodo-prof">Selcione o período</label>
+                <select name="periodo-prof" id="periodo-prof" required>
+                    <option value="" selected disabled>Bimestre</option>
+                    <option value="1° Bimestre">1° Bimestre</option>
+                    <option value="2° Bimestre">2° Bimestre</option>
+                    <option value="3° Bimestre">3° Bimestre</option>
+                    <option value="4° Bimestre">4° Bimestre</option>
+                </select>
+                <br>
+                <label for="disciplina">Disciplina</label>
+                <select name="disciplina" id="disciplina" required>
+                    <option value="" selected disabled>Selecione a disciplina em leciona.</option>
+                    <option value="Programação Web I">Programação Web I</option>
+                    <option value="Introdução à Programação">Introdução à Programação</option>
+                    <option value="Análise de Projeto de Software">Análise de Projeto de Software</option>
+                    <option value="Introdução a Redes de Computadores">Introdução a Redes de Computadores</option>
+                    <option value="Projeto de Interface de Usuário">Projeto de Interface de Usuário</option>
+                </select>
+            </div>
+            <fieldset>
+                <div>
+                    <label for="periodo-turma">Selcione o período da Turma:</label>
+                    <select name="periodo-turma" id="periodo-turma" required>
+                        <option value="" selected disabled>Bimestre</option>
+                        <option value="1° Bimestre">1° Bimestre</option>
+                        <option value="2° Bimestre">2° Bimestre</option>
+                        <option value="3° Bimestre">3° Bimestre</option>
+                        <option value="4° Bimestre">4° Bimestre</option>
+                    </select>
+                </div>      
+                <div>
+                    <h2>Avaliação Da Turma</h2>
+                    <p>Para auxiliá-lo neste processo de sistematização da autoavaliação, organizamos o roteiro abaixo para que você possa preenchê-lo. <br>
+                    Para tanto, responda os itens com a seguinte legenda: <br>
+                    <strong>CF</strong> (concordo fortemente) <strong>C</strong> (concordo) <strong>D</strong> (discordo) <strong>DF</strong> (discordo fortemente)</p>
+                </div>
+                <div>
+                    <label for="deacordo1-turma">1. Os alunos frequentam as aulas de forma regular.</label>
+                    <select name="deacordo1-turma" id="deacordo1-turma" required>
+                        <option value="" selected disabled>selecione</option>
+                        <option value="CF">CF</option>
+                        <option value="C">C</option>
+                        <option value="D">D</option>
+                        <option value="DF">DF</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="deacordo1-turma">2. Os alunos entregam as atividades propostas no prazo estabelecido .</label>
+                    <select name="deacordo2-turma" id="deacordo2-turma" required>
+                        <option value="" selected disabled>selecione</option>
+                        <option value="CF">CF</option>
+                        <option value="C">C</option>
+                        <option value="D">D</option>
+                        <option value="DF">DF</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="deacordo3-turma">3. A turma costuma fazer perguntas.</label>
+                    <select name="deacordo3-turma" id="deacordo3-turma" required>
+                        <option value="" selected disabled>selecione</option>
+                        <option value="CF">CF</option>
+                        <option value="C">C</option>
+                        <option value="D">D</option>
+                        <option value="DF">DF</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="deacordo4-turma">4.Os alunos usam estratégias criativas na resolução das atividades.</label>
+                    <select name="deacordo4-turma" id="deacordo4-turma" required>
+                        <option value="" selected disabled>selecione</option>
+                        <option value="CF">CF</option>
+                        <option value="C">C</option>
+                        <option value="D">D</option>
+                        <option value="DF">DF</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="deacordo5-turma">5.Estão atentos as explicações.</label>
+                    <select name="deacordo5-turma" id="deacordo5-turma" required>
+                        <option value="" selected disabled>selecione</option>
+                        <option value="CF">CF</option>
+                        <option value="C">C</option>
+                        <option value="D">D</option>
+                        <option value="DF">DF</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="deacordo6-turma">6. Demonstram alto interesse na disciplina.</label>
+                    <select name="deacordo6-turma" id="deacordo6-turma" required>
+                        <option value="" selected disabled>selecione</option>
+                        <option value="CF">CF</option>
+                        <option value="C">C</option>
+                        <option value="D">D</option>
+                        <option value="DF">DF</option>
+                    </select>
+                </div>
+            </fieldset>
+            <fieldset>
+                <div>
+                    <h2>Autoavaliação Docente</h2>
+                    <p>Para auxiliá-lo no preenchimento iremos seguir o mesmo processo de sistematização<br>
+                    Portanto, responda os itens com a seguinte legenda: <br>
+                    <strong>CF</strong> (concordo fortemente) <strong>C</strong> (concordo) <strong>D</strong> (discordo) <strong>DF</strong> (discordo fortemente)</p>
+                </div>
+                <div>
+                    <label for="deacordo1">1. Sou pontual nos meus horários de trabalho.</label>
+                    <select name="deacordo1" id="deacordo1" required>
+                        <option value="" selected disabled>selecione</option>
+                        <option value="CF">CF</option>
+                        <option value="C">C</option>
+                        <option value="D">D</option>
+                        <option value="DF">DF</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="deacordo2">2. Sou assíduo.</label>
+                    <select name="deacordo2" id="deacordo2" required>
+                        <option value="" selected disabled>selecione</option>
+                        <option value="CF">CF</option>
+                        <option value="C">C</option>
+                        <option value="D">D</option>
+                        <option value="DF">DF</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="deacordo3">3. Os exercicíos avaliativos são entregues nas datas marcadas.</label>
+                    <select name="deacordo3" id="deacordo3" required>
+                        <option value="" selected disabled>selecione</option>
+                        <option value="CF">CF</option>
+                        <option value="C">C</option>
+                        <option value="D">D</option>
+                        <option value="DF">DF</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="deacordo4">4. Os planejamentos são entegues nas datas marcadas.</label>
+                    <select name="deacordo4" id="deacordo4" required>
+                        <option value="" selected disabled>selecione</option>
+                        <option value="CF">CF</option>
+                        <option value="C">C</option>
+                        <option value="D">D</option>
+                        <option value="DF">DF</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="deacordo5">5. Busco formação para ser um docente capacitado.</label>
+                    <select name="deacordo5" id="deacordo5" required>
+                        <option value="" selected disabled>selecione</option>
+                        <option value="CF">CF</option>
+                        <option value="C">C</option>
+                        <option value="D">D</option>
+                        <option value="DF">DF</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="deacordo6">6. Compartilho experiências profissionais com outros docentes.</label>
+                    <select name="deacordo6" id="deacordo6" required>
+                        <option value="" selected disabled>selecione</option>
+                        <option value="CF">CF</option>
+                        <option value="C">C</option>
+                        <option value="D">D</option>
+                        <option value="DF">DF</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="deacordo7"><strong>Agora descreva o que você acha do seu desempenho profissional:</strong></label>
+                    <br>
+                    <textarea rows="6" style="width: 26em" id="deacordo7" name="deacordo7"  required></textarea>
+                </div>
+            </fieldset>
+        <button class="botao" type="submit">Enviar</button>
+    </form>
+    <div id="results">
+       
+    </div>
+    <script src="./script-doc.js"></script>
+</body>
+</html>
